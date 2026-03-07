@@ -6,5 +6,3 @@
 
   ```sh
   brew install ayarotsky/tap/diesel-guard
-
-  That's it. Users who land here came from the main repo anyway.
