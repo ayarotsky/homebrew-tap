@@ -5,21 +5,21 @@ class DieselGuard < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-aarch64-apple-darwin.tar.xz"
-      sha256 "1c4768a1434bd02901e6068c8c7c1f19854da551db5a7fe823d0e8922d237c28"
+      sha256 "cd54f31ccb310cb58912e4ab82309683a0c191e973bac67064086c2af7d7b271"
     end
     if Hardware::CPU.intel?
       url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-x86_64-apple-darwin.tar.xz"
-      sha256 "6923aec41638ccb650562ea51db019e9add172496efeab29cc3ac28ae337cadc"
+      sha256 "a5bbec871139c6c4d9e323399c4e6962ab39bae56fe79f70c17c1594dd1abdb6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "df7b021f961f830ebb31c8fa6cd6d3e4bf44454b58319c568b08bdc915bf67ae"
+      sha256 "4fe23a5aabcc57ede8a5da219643bd3fea35313c2584a0b7e8cfd06543083338"
     end
     if Hardware::CPU.intel?
       url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "84ad22041ce680060ba93c41c8ce8ab33978fe7e3ddf279d7df4cb9e3543546e"
+      sha256 "a79e239184f588c6033ed10ab3321e9721f22125e71369088a5763ac9b8416dc"
     end
   end
   license "MIT"
