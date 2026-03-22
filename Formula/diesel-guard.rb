@@ -1,25 +1,25 @@
 class DieselGuard < Formula
-  desc "Linter for dangerous Postgres migration patterns in Diesel and SQLx"
+  desc "Linter for dangerous Postgres migration patterns in Diesel and SQLx. Prevents downtime caused by unsafe schema changes."
   homepage "https://github.com/ayarotsky/diesel-guard"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-aarch64-apple-darwin.tar.xz"
-      sha256 "cd54f31ccb310cb58912e4ab82309683a0c191e973bac67064086c2af7d7b271"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-aarch64-apple-darwin.tar.xz"
+      sha256 "202e186bf32c106ddd5adf96324d548b6aa7c1325d25d8f8bc85d4162fb8073f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-x86_64-apple-darwin.tar.xz"
-      sha256 "a5bbec871139c6c4d9e323399c4e6962ab39bae56fe79f70c17c1594dd1abdb6"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-x86_64-apple-darwin.tar.xz"
+      sha256 "eafb2bdecfdaf36d4e2882f171a8565a6ff1030569946734f4306eba3e6d7cf7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4fe23a5aabcc57ede8a5da219643bd3fea35313c2584a0b7e8cfd06543083338"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "95bd746b49dd3a076ab579eacd2526b333d948253b5861ab8732b5af71dd218e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.8.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a79e239184f588c6033ed10ab3321e9721f22125e71369088a5763ac9b8416dc"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "80fdb5c614b4d364558532b4d7a5425026f5b9284673b487de0cf46fbc161006"
     end
   end
   license "MIT"
