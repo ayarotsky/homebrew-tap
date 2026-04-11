@@ -1,25 +1,25 @@
 class DieselGuard < Formula
   desc "Linter for dangerous Postgres migration patterns in Diesel and SQLx. Prevents downtime caused by unsafe schema changes."
   homepage "https://github.com/ayarotsky/diesel-guard"
-  version "0.9.0"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-aarch64-apple-darwin.tar.xz"
-      sha256 "202e186bf32c106ddd5adf96324d548b6aa7c1325d25d8f8bc85d4162fb8073f"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.10.0/diesel-guard-aarch64-apple-darwin.tar.xz"
+      sha256 "92cdd9a8b69f52c66cdfe2a761d4fd9e27e6d018de0a5308488cb9dbf66c4cfa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-x86_64-apple-darwin.tar.xz"
-      sha256 "eafb2bdecfdaf36d4e2882f171a8565a6ff1030569946734f4306eba3e6d7cf7"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.10.0/diesel-guard-x86_64-apple-darwin.tar.xz"
+      sha256 "6acd1dd0445cbabce471176139f0a1f09ae06b8f21289a34c374dfb5d82b282e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "95bd746b49dd3a076ab579eacd2526b333d948253b5861ab8732b5af71dd218e"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.10.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f9415b596b8860373fc2fb7566fa628f7bfab9190e652fc7007e8276bee5be47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.9.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "80fdb5c614b4d364558532b4d7a5425026f5b9284673b487de0cf46fbc161006"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.10.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "714db64518bb31135664ae1c70fbf8f813c3d34c1504ca72afa319eadbcb50c0"
     end
   end
   license "MIT"
