@@ -1,25 +1,25 @@
 class DieselGuard < Formula
   desc "Linter for dangerous Postgres migration patterns in Diesel and SQLx. Prevents downtime caused by unsafe schema changes."
-  homepage "https://github.com/ayarotsky/diesel-guard"
-  version "0.11.0"
+  homepage "https://ayarotsky.github.io/diesel-guard/"
+  version "0.12.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.11.0/diesel-guard-aarch64-apple-darwin.tar.xz"
-      sha256 "26bb10d3a128153448be686691bd0f41cb4774dd87f5b98a9a778985754203d5"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.12.0/diesel-guard-aarch64-apple-darwin.tar.xz"
+      sha256 "43070bfe4ec68b3d08cbae5dddd2b11830640d9c98879d7c6f5c6093745d4722"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.11.0/diesel-guard-x86_64-apple-darwin.tar.xz"
-      sha256 "5366815a3713108524b5d211dd5c064fe3d3558124a16a30cbf159e1ce961b92"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.12.0/diesel-guard-x86_64-apple-darwin.tar.xz"
+      sha256 "73d002dd8b6987bd224b613eb6a66d7042e4d67406d70900a7fcec8fb5c7d36d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.11.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "27007efbff73c99e0ed36be2885c89c7a8094182cde435d47ec4ed94f02b61c7"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.12.0/diesel-guard-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "40c5954e634ff64fa46b7dea52ac2bc0a3e0369535583664f1038a47e8239607"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.11.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9c97ff9adf8557f3e16a63c0585a45bb11f7f866f3cd7a931d0c1170f9de0a6d"
+      url "https://github.com/ayarotsky/diesel-guard/releases/download/v0.12.0/diesel-guard-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "8f2ada3d3ca806e20bff15a20a46431f736c1a57d23f8bba615dfe1d6262c7a5"
     end
   end
   license "MIT"
